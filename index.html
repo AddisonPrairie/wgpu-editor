@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>wgpu-editor</title>
+        <link rel="stylesheet" href="codemirror.css" />
+        <link rel="stylesheet" href="wgpu-editor.css" />
+        <script src="codemirror.js"></script>
+        <script src="simple.js"></script>
+        <script src="wgsl.js"></script>
+        <script src="wgpu-editor.js"></script>
+    </head>
+    <body>
+        <div id="top-bar">
+            <button id="new" class="button-bar">New</button>
+            <button id="save" class="button-bar">Save</button>
+            <button id="load" class="button-bar">Load</button>
+            <button id="compile" class="button-bar">Compile</button>
+            <button id="render-button" class="button-bar">Render</button>
+            
+            <button id="new-uniform" class="button-bar">New Uniform</button>
+            <button id="uniform-button" class="button-bar">Open Uniforms</buton>
+        </div>
+        <div id="code"></div>
+        <div id="uniforms">
+            <div id="uniforms-editor">
+                <ul id="uniforms-list">
+                </ul>
+            </div>
+        </div> 
+        <div id="render-container">
+            <canvas id="render"></canvas>
+        </div>
+    </body>
+</html>
+
+
