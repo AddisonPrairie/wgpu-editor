@@ -1,7 +1,7 @@
 CodeMirror.defineSimpleMode("wgsl", {
   start: [
     
-    {regex: /\b([a-zA-Z0-9_]+)(\s*\()/, token: [null, "function", null]},
+    {regex: /\b([a-zA-Z0-9_]+)(\s*\()/, token: ["function", null]},
     {regex: /\b(var|vec(2|3|4)|fn|mat[0-9]x[0-9]|f32|i32|u32|bool|struct)\b/, token: "type"},
     {regex: /(@)(location)(\()/, token: [null, "type", null]},
     {regex: /\b([0-9\.-]+)\b/, token:["literal"]},
